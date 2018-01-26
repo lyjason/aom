@@ -1,11 +1,17 @@
 #!/usr/bin/sh
 #author : jasonliu
 
+#返回token与主文件
+re ()
+{
+token=python_done
+./main.sh $token
+}
 #判断当前Python版本
 v=`python --version`
 if [ -e /usr/local/bin/python3.6 ];then 
   echo 当前版本$v ，不用升级！
-  exit
+  re
 
 else
 echo 当前版本$v，版本过低！
@@ -35,10 +41,7 @@ ln -sb /usr/local/bin/python3.6 /usr/bin/python
 
 #测试
 echo -e "\n当前Python版本：" `python --version`
-
+re
 fi
 
 
-#返回token与主文件
-token=python_done
-./main.sh $token

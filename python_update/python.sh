@@ -1,6 +1,16 @@
 #!/usr/bin/sh
 #author : jasonliu
 
+#判断当前Python版本
+v=`python --version`
+if [ -e /usr/local/bin/python3.6 ];then 
+  echo 当前版本$v ，不用升级！
+  exit
+
+else
+echo 当前版本$v，版本过低！
+read -p 回车开始升级！
+
 #下载系统依赖
 yum -y install wget sqlite-devel xz gcc automake zlib-devel openssl-devel readline-devel
 
@@ -24,3 +34,5 @@ ln -sb /usr/local/bin/python3.6 /usr/bin/python
 
 #测试
 echo -e "\n当前Python版本：" `python --version`
+
+fi

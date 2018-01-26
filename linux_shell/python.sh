@@ -15,6 +15,7 @@ read -p 回车开始升级！
 yum -y install wget sqlite-devel xz gcc automake zlib-devel openssl-devel readline-devel
 
 #下载源码包
+cd /opt/
 wget http://mirrors.sohu.com/python/3.6.4/Python-3.6.4.tgz
 
 #解压安装

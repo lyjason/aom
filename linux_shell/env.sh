@@ -6,7 +6,7 @@ yum install vim git -y
 
 #修改vi的关联
 echo "alias vi='vim'" >> /etc/bashrc
-. /etc/bashrc
+bash /etc/bashrc
 
 #升级系统yum库
 echo -e '\n'

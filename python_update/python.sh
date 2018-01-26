@@ -1,5 +1,5 @@
 #!/usr/bin/sh
-#author : jasonliu
+#author : jasonliuu@qq.com
 
 #判断当前Python版本
 v=`python --version`

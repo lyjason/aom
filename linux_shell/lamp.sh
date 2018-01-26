@@ -1,6 +1,11 @@
 #!/usr/bin/sh
 #author:jasonliuu@qq.com
 
+# 返回值与主文件
+re (){
+token=lamp_done
+./main.sh $token
+}
 
 install ()
 {
@@ -25,16 +30,13 @@ read -p '回车开始安装！'
 install
 #收场
 echo -e "\n【lamp组件已安装完毕】\n"
-echo -e "1.初始化数据库\n2.退出"
+echo -e "1.初始化数据库\n2.返回菜单"
 read -p "请输入：" n
 case $n in
   1) mysql_secure_installation
   ;;
-  2)exit 0
+  2) re
   ;;
 esac
 
 
-# 返回值与主文件
-token=lamp_done
-./main.sh $token

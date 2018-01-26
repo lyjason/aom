@@ -19,13 +19,14 @@ install
 
 read -p "是否下载tomcat?[y/N]" tc
 case tc in
-	*) echo -e "\n未下载Tomcat\n"
-	;;
 	y)
 	install_tomcat
 	echo -e "\napache-tomcat-9.0.4.zip已下载至/opt目录下\n"
 	;;
 	n) echo -e "\n未下载Tomcat\n"
+        ;;
+	*) echo -e "\n未下载Tomcat\n"
+	;;
 esac
 
 #返回值与主文件

@@ -23,4 +23,4 @@ sed -i '1c #!/usr/bin/python2 -Es' /usr/bin/firewall-cmd
 ln -sb /usr/local/bin/python3.6 /usr/bin/python
 
 #测试
-echo "\n当前Python版本：" `python --version`
+echo -e "\n当前Python版本：" `python --version`

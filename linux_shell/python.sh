@@ -36,3 +36,8 @@ ln -sb /usr/local/bin/python3.6 /usr/bin/python
 echo -e "\n当前Python版本：" `python --version`
 
 fi
+
+
+#返回token与主文件
+token=python_done
+./main.sh $token

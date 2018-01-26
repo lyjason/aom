@@ -12,6 +12,7 @@ install_tomcat ()
 wget -P http://mirrors.shu.edu.cn/apache/tomcat/tomcat-9/v9.0.4/bin/apache-tomcat-9.0.4.zip /opt
 }
 
+#主体
 echo -e "\n即将开始安装java开发环境\n"
 read -p "回车开始安装！"
 install
@@ -27,6 +28,7 @@ case tc in
 	n) echo -e "\n未下载Tomcat\n"
 esac
 
+#返回值与主文件
 token=java_done
 
 ./main.sh $token

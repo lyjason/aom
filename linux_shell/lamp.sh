@@ -33,3 +33,8 @@ case $n in
   2)exit 0
   ;;
 esac
+
+
+# 返回值与主文件
+token=lamp_done
+./main.sh $token

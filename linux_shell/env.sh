@@ -18,3 +18,7 @@ systemctl stop firewalld
 systemctl disable firewalld
 setenforce 0
 sed -i 's/^SELINUX=enforcing/SELINUX=disable/' /etc/selinux/config
+
+#返回值与主文件
+token=env_done
+./main.sh $token

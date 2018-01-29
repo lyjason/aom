@@ -2,7 +2,7 @@
 #author:jasonliuu@qq.com
 
 #安装系统基本软件
-yum install vim git -y
+yum install vim git net-tools nc  -y
 
 #修改vi的关联
 echo "alias vi='vim'" >> /etc/bashrc

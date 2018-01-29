@@ -1,11 +1,14 @@
 #!/usr/bin/sh
 #author : jasonliu
 
+#记录当前系统路径
+dic=`pwd`
+
 #返回token与主文件
 re ()
 {
 token=python_done
-./main.sh $token
+bash $dic/main.sh $token
 }
 #判断当前Python版本
 v=`python --version`

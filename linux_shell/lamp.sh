@@ -22,7 +22,7 @@ yum install mariadb mariadb-server mariadb-devel -y
 #安装php
 echo -e "\n安装php，请稍等...\n"
 sleep 5s
-yum -y install php-gd php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-snmp php-soap curl curl-devel php 
+yum -y install php-gd php-mysql php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-snmp php-soap curl curl-devel php 
 }
 
 echo -e "\n即将开始安装lamp环境，整个过程持续5分钟左右，请耐心等待！\n"

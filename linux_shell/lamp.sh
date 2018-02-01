@@ -33,7 +33,9 @@ echo -e "\n【lamp组件已安装完毕】\n"
 echo -e "1.初始化数据库\n2.返回菜单"
 read -p "请输入：" n
 case $n in
-  1) mysql_secure_installation
+  1) 
+  systemctl start mariadb
+  mysql_secure_installation
   ;;
   2) re
   ;;

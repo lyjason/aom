@@ -17,7 +17,7 @@ yum install httpd -y
 #安装mysql
 echo -e "\n安装mysql，请稍等...\n"
 sleep 5s
-yum install mysql mysql-server mysql-devel -y
+yum install mariadb mariadb-server mariadb-devel -y
 
 #安装php
 echo -e "\n安装php，请稍等...\n"
